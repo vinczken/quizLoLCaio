@@ -1,0 +1,217 @@
+html {
+  color: rgb(240, 230, 210);
+  height: 100%;
+  width: 100%;
+}
+
+/* Fontes */
+
+@font-face {
+  font-family: 'frizRegular';
+  src: url('fonte/frizRegular.woff2') format('woff2'),
+       url('fonte/frizRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'frizMedium';
+  src: url('fonte/frizMedium.woff2') format('woff2'),
+       url('fonte/frizMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'frizBold';
+  src: url('fonte/frizBold.woff2') format('woff2'),
+       url('fonte/frizBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'frizItalic';
+  src: url('fonte/frizItalic.woff2') format('woff2'),
+       url('fonte/frizItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+/* FONTES ^^^^^ */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  /*fontes*/
+  font-family: 'frizRegular';
+  font-weight: normal;
+  font-style: normal;
+  /*cor*/
+  background-color: rgba(3,10,17,255);
+  margin: 0;
+  cursor: url(fotos/cursor.png), auto;
+  text-rendering: optimizelegibility;
+}
+
+::selection {
+  background-color: rgb(200, 155, 60);
+  color: rgb(1, 10, 19);
+}
+
+#bemVindo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bemVindo > h1{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'frizMedium';
+  color: #C8AA6E;
+}
+
+.lol {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  height: 75%;
+  width: 75%;
+}
+
+.videoQuestion {
+  height: fit-content;
+  position: relative;
+  background-image: linear-gradient(rgba(3,10,17,255), rgba(3, 10, 17, 0) 40%, rgba(3, 10, 17, 0) 60%, rgba(3,10,17,255))
+}
+
+.video{
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0rem;
+  left: 0rem;
+}
+
+video{
+  object-fit: cover; 
+  object-position: center center; 
+  height: 100%; 
+  width: 100%; 
+  transform-origin: center center;
+  overflow: clip;
+}
+
+#estaPronto{
+  padding: 65px 55px 45px 65px;
+  max-width: 85rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #C8AA6E;
+  font-size: 150%;
+}
+
+#estaPronto p{
+  margin: 20px 25px 25px 25px;
+  display: inline;
+}
+
+#estaPronto button{
+  margin: 45px 55px 45px 55px;
+  padding: 5px 10px 5px 10px;
+}
+
+
+button {
+  border: solid #785A28 2px;
+  padding: 10px 10px 10px 10px;
+  margin: 5px 10px 5px 10px;
+  color: #C8AA6E;
+  background-color: #1E2328;
+  font-family : inherit;
+  font-size: 1em;
+  transition: color .3s;
+  transition: border .3s;
+  cursor: url(fotos/cursorPointer.png), auto;
+}
+
+button:hover{
+  border: solid #C89B3C 2px;
+  color: #F0E6D2;
+}
+
+button:disabled{
+  border: solid #463714 2px;
+  color: #785A28;
+}
+
+#quiz {
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+  box-sizing: border-box;
+  padding: 50px 30px 50px 30px;
+}
+
+.titulo{
+  padding: 85px 55px 45px 85px;
+  max-width: 85rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #C8AA6E;
+  font-size: 150%;
+}
+
+.titulo p{
+  margin: 20px 25px 25px 25px;
+  display: inline;
+}
+
+.titulo span{
+  font-size: 200%;
+}
+
+.perguntas{
+  margin: 50px auto 50px auto;
+  display: block;
+}
+
+.certo, .errado {
+  font-size: 100%;
+  text-align: center;
+}
+
+#resulRestart{
+  padding: 65px 55px 45px 65px;
+  max-width: 85rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 150%;
+  color: #F0E6D2;
+}
+
+#pontos{
+  font-size: 200%;
+}
+
+#pontos span{
+    font-size: 100%;
+}
+
+main, .certo, .errado{
+  display: none;
+}
+
